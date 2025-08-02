@@ -1,0 +1,17 @@
+{
+    "name": "football-stats-frontend",
+    "version": "1.0.0",
+    "description": "Frontend for live football statistics display",
+    "main": "index.js",
+    "scripts": {
+      "start": "npx serve ./public"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "react": "^18.3.1",
+      "react-dom": "^18.3.1",
+      "serve": "^14.2.3"
+    }
+  }

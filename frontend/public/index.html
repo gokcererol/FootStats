@@ -1,0 +1,39 @@
+<!-- frontend/public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootStats</title>
+    <!-- Add a link to the favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚽</text></svg>">
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom styles for a full-screen layout -->
+    <style>
+        html, body, #root {
+            height: 100vh; /* Use viewport height */
+            width: 100vw;  /* Use viewport width */
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrollbars on the body itself */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <!-- React and Babel scripts -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root">
+        <!-- The React app will be rendered here -->
+    </div>
+    <script type="text/babel" src="./js/App.js"></script>
+    <script type="text/babel">
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
